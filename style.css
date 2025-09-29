@@ -1,0 +1,111 @@
+/* & This will style the font of the entire webpage */
+* {
+    font-family:"Caviar Dreams";
+    font-style: italic;
+    letter-spacing: .1em;
+}
+
+/* & This will styles the entire webpage */
+body {
+    /* ~ Colors inspired by my VS Code Theme */
+    background-color: #393a55;
+    color: #ff9eb5;
+    /* ~ This will remove the default browser spacing */
+    margin: 0;
+    padding: 0;
+}
+
+/* & This will create a flex container */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* & This will style the header image */
+.img-header {
+    width: 200px;
+    border: 5px solid #ff9eb5;
+}
+
+/* & This will style the <h1> element */
+h1 {
+    width: 30%;
+    text-align: center;
+    border: 5px solid;
+    background-color: #ff9eb5;
+    color: whitesmoke;
+}
+
+/* & This will style the horizontal line or dividing line to divide the different sections on the webpage */
+.section-divider {
+    width: 90%;
+    height: 10px;
+    background: linear-gradient(90deg, #a9f1df 25%, #ffbbbb 75%)no-repeat;
+}
+
+/* & This will style the <h2> element */
+h2 {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+}
+
+/* & This will style the horizontal line or dividing line under each title for the section */
+.title-divider {
+    width: 30%;
+    height: 10px;
+    background: linear-gradient(90deg, #a9f1df 25%, #ffbbbb 75%)no-repeat;
+}
+
+/* & This will style the <li> elemnt and the <li> marker */
+li {
+    list-style: circle;
+}
+
+li::marker {
+    font-size: 1.6em;
+}
+
+/* & This will style the footer section of the webpage */
+footer {
+    text-align: center;
+    bottom: 0;
+}
+
+/* & This will style various <p> elements with different font-families , font-sizes, & font-weights */
+/* ~ This will style the 1st <p> element */
+#p-1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+/* ~ This will style the 2nd <p> element */
+#p-2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* ~ This will style the 3rd <p> element */
+#p-3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* ~ This will style the 4th <p> element */
+#p-4 {
+    font-family:cursive;
+    font-size: 100px;
+    font-weight: 100;
+}
+
+/* ~ This will style the 5th <p> element */
+#p-5 {
+    font-family: fantasy;
+    font-size: 40px;
+    font-weight: 400;
+}
+

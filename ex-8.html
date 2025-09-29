@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- & Title of the Webpage -->
+    <title>Ex. 8: Five Families</title>
+    <!-- & Link to CSS Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- & Header
+    ~ The space near the top of the webpage that will have inforamtion like the website logo, title of the webpage, search bar, links to other parts of the site, and a button to sign into the webpage
+    -->
+    <header class="flex-container">
+        <!-- & Figure
+        ~ Usually a graphic, image, or a diagram
+        ~ It can also house more than one image
+        -->
+        <figure>
+            <img
+                src="img/a-lady-fan-cherry-blossom.png"
+                alt="Woman with a cherry blossom fan at dusk"
+                class="img-header"
+            >
+        </figure>
+
+        <h1>Five Famlies</h1>
+
+        <figure>
+            <img
+                src="img/a-lady-fan-cherry-blossom.png"
+                alt="Woman with a cherry blossom fan at dusk"
+                class="img-header"
+
+            >
+        </figure>
+    </header>
+    <br>
+    <hr class="section-divider">
+    <br>
+
+    <!-- & Main
+    ~ This is where the main information of the webpage will go
+    ~ i.e. About the different aspects of CSS Fonts
+    -->
+    <main>
+        <!-- & Section
+        ~ This groups together pieces of similar information together
+        ~ i.e. A section about CSS Fonts and another about Font Properties
+        -->
+        <!-- & This section will discuss CSS Fonts -->
+        <section>
+            <br>
+            <h2># CSS Fonts</h2>
+            <hr class="title-divider">
+            <br>
+
+            <ul>
+                <li>
+                    Fonts are one of the most heavily-used properties for styling. They can improve readability and further express a page's tone and feeling.
+                </li>
+                <li>
+                    In CSS there are five generic font families:
+                    <ul>
+                        <li>Serif</li>
+                        <li>Sans-serif</li>
+                        <li>Monospace</li>
+                        <li>Cursive</li>
+                        <li>Fantasy</li>
+                    </ul>
+                </li>
+                <li>
+                    These fonts are considered to be "web-safe" because they are supported in most major web browsers.
+                </li>
+                <li>
+                    These are the font families and an example of each:
+                    <ul>
+                        <li>
+                            <img
+                                src="img/b-font-families-and-examples.png"
+                                alt="Font Families and examples of each"
+                                width="98%"
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    To assign these families with CSS, use the font-family property:
+                    <ul>
+                        <li>
+                            <img
+                                src="img/c-font-family-syntax.png"
+                                alt="Font-Family Property"
+                                width="30%"
+                            >
+                        </li>
+                        <li>
+                            It is good practice to always include a generl font name after the desired font name. This is so that the browser can fall back to something if need be.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <br>
+        <hr class="section-divider">
+        <br>
+
+        <!-- & This section will discuss Font Properties -->
+        <section>
+            <br>
+            <h2># Font Properties</h2>
+            <hr class="title-divider">
+            <br>
+
+            <ul>
+                <li>
+                    Outside of font-family there are other CSS properties that can be used to style fonts.
+                </li>
+                <li>
+                    The font-size property sets how big the text of a given element should be on the page. It can either be done with absolute units (px, pt, etc...) or relative units (percentages, em, rem, etc...)
+                </li>
+                <li>
+                    This property can be applied to any element that features text content, such as paragraphs:
+                    <ul>
+                        <li>
+                            <img
+                                src="img/d-fontt-size-property.png"
+                                alt="Font-Size Property"
+                                width="30%"
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <br>
+
+                <li>
+                    This image showcases a few more examples of using the font-size property:
+                    <ul>
+                        <li>
+                            <img
+                                src="img/e-font-size-examples.png"
+                                alt="Examples of Font-Size Property"
+                                width="70%"
+                            >
+                        </li>
+                        <li>
+                            The font-size property should be applied in an accessible way. This means avoiding absolute units when possible and not making paragraph text as large as header text (or vice versa).
+                        </li>
+                    </ul>
+                </li>
+                <br>
+
+                <li>
+                    The font-weight property to set the default "thickness" of a given element's text.
+                </li>
+                <li>
+                    This property uses either keyword values (i.e. lighter and bolder), or numeric values (i.e. 100 and 800):
+                    <ul>
+                        <li>
+                            <img
+                                src="img/f-font-weight-property.png"
+                                alt="Font-weight Property"
+                                width="30%"
+                            >
+                        </li>
+                        <li>
+                            If we use numeric values for the font-weight property, remember this:
+                            <ul>
+                                <li>
+                                    Anything less than 400 makes the font thinner or lighter.
+                                </li>
+                                <li>
+                                    The 400 - 700 range is considered "normal" for most fonts.
+                                </li>
+                                <li>
+                                    Anything above 700 usually makes the font bolder.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Despite these range, not all font families are affected the same way by the font-weight property. For instance, if a given font is already bold to begin with, an increased font-weight might have little to no effect.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <br>
+    <hr class="section-divider">
+    <br>
+
+    <!-- & Footer
+    ~ This is where important information will go that is not suitable for the <header> element
+        ~ Footnotes
+        ~ Links to extended resources
+            ~ In the <a> element -> use the following for the href attribute
+                ~ href = "/privacy"
+            ~ Also use the target attribute to open the link in anew web broweser tab
+                ~ target = "_blank"
+        ~ Copyright information
+    -->
+    <footer>
+        <!-- & &copy; -> This is the symbol for copyright -->
+        &copy; 2025 EtariaL33. All rights reserved.
+    </footer>
+    <br>
+</body>
+</html>
